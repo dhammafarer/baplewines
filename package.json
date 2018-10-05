@@ -1,0 +1,53 @@
+{
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@material-ui/core": "^3.1.1",
+    "@material-ui/icons": "^3.0.1",
+    "@types/react-helmet": "^5.0.7",
+    "browser-locale": "^1.0.3",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.0.0",
+    "gatsby-image": "^2.0.13",
+    "gatsby-plugin-favicon": "^3.1.4",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-typescript": "^2.0.0",
+    "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-transformer-javascript-frontmatter": "^2.0.0",
+    "gatsby-transformer-sharp": "^2.1.2",
+    "jss": "^9.8.7",
+    "mdi-material-ui": "^5.5.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "react-jss": "^8.6.1",
+    "typescript": "^3.1.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate:types": "gql-gen --schema http://localhost:8000/___graphql --template graphql-codegen-typescript-template --out ./src/graphql.d.ts/"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.6",
+    "@types/react": "^16.4.14",
+    "graphql-code-generator": "^0.12.6",
+    "graphql-codegen-typescript-template": "^0.12.6",
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
