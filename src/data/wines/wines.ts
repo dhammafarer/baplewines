@@ -1,9 +1,5 @@
 ﻿export const frontmatter = {
   sections: {
-    welcome: {
-      heading: "Baplewines, a selected group of wineries ready for you.",
-      image: "../img/wines/Barricas-para-crianza-del-vino.jpg",
-    },
     intros: [
       {
         heading:  "La Barrica de Vitivinos",
@@ -38,18 +34,6 @@
         link: {
           to: "/sparkling-wines",
           label: "Sparkling Wines",
-        },
-      },
-      {
-        heading: "The elegancy of Spanish Bubbles",
-        image: "../img/wines/Low cost wine_new.jpg",
-        body: [
-        "We don´t just sell our wines, we go beyond... we give you wine solutions... What are you waiting for?",
-        "It could be one of the best quality-cost relationship in the wine market",
-        ],
-        link: {
-          to: "/solutions",
-          label: "Wine Solutions",
         },
       },
     ],

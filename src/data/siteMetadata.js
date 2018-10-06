@@ -22,7 +22,7 @@ module.exports = {
     },
     {
       label: "Wines",
-      to: "/",
+      to: "/wines",
       links: [
         {
           label: "Red Wines",
