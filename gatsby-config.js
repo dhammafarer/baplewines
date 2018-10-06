@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'baple-group',
+        name: 'baple-wines',
         short_name: 'baple',
         start_url: '/',
         background_color: '#336699',
