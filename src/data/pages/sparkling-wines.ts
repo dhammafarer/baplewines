@@ -16,7 +16,7 @@
       {
         heading: "Dulzón Azul",
         subheading: "The elegancy of the Spanish bubbles",
-        image: "../img/wines/Sparkling wine blue.jps",
+        image: "../img/wines/Sparkling wine blue.jpg",
         body: [
           "Blue color with greenish tones. Very fine and abundant bubbles forming a Crown on top. Intense, elegant and refined aroma, emerging tropical fruit flavours with citric touch. Very good entry , tasty, elegant with a touch of sweetness. Well balanced and Harmonic. The aftertaste is long and very pleasant remenbering the elegance and Sweetness of Spain!",
         ],
@@ -40,7 +40,7 @@
     ],
     more: {
       heading: "Do you want something more?",
-      logo: "../img/logos/baplewines-logo.png",
+      logo: "../img/logos/baple-wines-logo.png",
       link: {
         label: "Contact us!",
         to: "/contact",

@@ -23,6 +23,8 @@ const WinesTemplate: React.SFC<Props> = (({ data }) => {
     <Layout>
       { wines.map((w: any, i) =>
         <About
+          leftSize={4}
+          rightSize={8}
           heading={w.heading}
           subheading={w.subheading}
           body={w.body}

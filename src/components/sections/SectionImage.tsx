@@ -1,8 +1,10 @@
 import * as React from "react";
 import { createStyles, Theme, withStyles, WithStyles } from "@material-ui/core/styles";
-import HorizontalSplit from "./HorizontalSplit";
+import HorizontalSplit, { Size } from "./HorizontalSplit";
 import Typography from "@material-ui/core/Typography";
 import Img from "gatsby-image";
+
+export { Size } from "./HorizontalSplit";
 
 const styles = (theme: Theme) => createStyles({
   image: {
@@ -53,13 +55,17 @@ export interface SectionImageProps {
   body?: string[];
   before?: any;
   after?: any;
+  leftSize: Size;
+  rightSize: Size;
 }
 
 type Props = SectionImageProps & WithStyles<typeof styles>;
 
 const SectionImage: React.SFC<Props> = ({
-  classes, before, after, reverse, heading, subheading, body, image}) => (
+  classes, leftSize, rightSize, before, after, reverse, heading, subheading, body, image}) => (
   <HorizontalSplit
+    leftSize={leftSize}
+    rightSize={rightSize}
     reverse={reverse}
     left={image && <Img className={classes.image} fluid={image.childImageSharp.fluid}/>}
     right={

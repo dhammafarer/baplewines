@@ -64,7 +64,7 @@
     ],
     more: {
       heading: "Do you want something more?",
-      logo: "../img/logos/baplewines-logo.png",
+      logo: "../img/logos/baple-wines-logo.png",
       link: {
         label: "Contact us!",
         to: "/contact",

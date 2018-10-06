@@ -4,11 +4,13 @@ import { withStyles, WithStyles } from "@material-ui/core/styles";
 import styles from "../../styles/components/intro-styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import SectionImage from "./SectionImage";
+import SectionImage, { Size } from "./SectionImage";
 import { Link } from "gatsby";
 
 export interface IntroProps {
   reverse?: boolean;
+  leftSize?: Size;
+  rightSize?: Size;
   heading?: string;
   subheading?: string;
   body?: string[];
@@ -21,8 +23,10 @@ export interface IntroProps {
 
 type Props = WithStyles<typeof styles> & IntroProps;
 
-const Intro: React.SFC<Props> = ({ reverse, heading, subheading, body, image, link, classes }) => (
+const Intro: React.SFC<Props> = ({ reverse, leftSize, rightSize, heading, subheading, body, image, link, classes }) => (
   <SectionImage
+    leftSize={leftSize || 6}
+    rightSize={rightSize || 6}
     reverse={reverse}
     image={image}
     heading={heading}

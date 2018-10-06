@@ -4,20 +4,26 @@ import styles from "../../styles/components/about-styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "gatsby";
-import SectionImage from "./SectionImage";
+import SectionImage, { Size } from "./SectionImage";
 import Img from "gatsby-image";
 
 type Props = WithStyles<typeof styles> & {
-  reverse?: boolean
-  heading?: string
-  subheading?: string
-  image?: any
-  logo?: any
-  body?: string[],
+  reverse?: boolean;
+  leftSize?: Size;
+  rightSize?: Size;
+  heading?: string;
+  subheading?: string;
+  image?: any;
+  logo?: any;
+  body?: string[];
 };
 
-const About: React.SFC<Props> = ({ heading, subheading, image, logo, body, reverse, classes }) => (
+const About: React.SFC<Props> = ({
+  heading, subheading, image, logo, body, reverse, classes, leftSize, rightSize
+}) => (
   <SectionImage
+    leftSize={leftSize || 6}
+    rightSize={rightSize || 6}
     reverse={reverse}
     heading={heading}
     subheading={subheading}
