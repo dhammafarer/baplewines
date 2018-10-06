@@ -15,7 +15,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
-      "Open Sans",
+      "Playfair Display",
       "sans-serif",
     ].join(","),
     display2: {

@@ -30,7 +30,7 @@ const Intro: React.SFC<Props> = ({ reverse, heading, subheading, body, image, li
     body={body}
     after={link &&
       <Link to={link.to}>
-        <Button variant="contained" className={classes.button}>
+        <Button variant="outlined" className={classes.button}>
           {link.label}
         </Button>
       </Link>
@@ -39,17 +39,3 @@ const Intro: React.SFC<Props> = ({ reverse, heading, subheading, body, image, li
 );
 
 export default withStyles(styles)(Intro);
-
-export const query = graphql`
-  fragment IntroQuery on intro_2 {
-    heading
-    body
-    image {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;

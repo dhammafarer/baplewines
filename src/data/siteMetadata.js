@@ -1,24 +1,54 @@
-const group = require('./group');
-const metalPackaging = require('./metalPackaging');
-const plastics = require('./plastics');
-const energy = require('./energy');
-const engineering = require('./engineering');
-
 module.exports = {
   contact: {
     name: "HQ",
     email: "info@baple.com.tw",
-    phone: "+886-2-2345-2384",
+    phone: "+886-2-2897-0076",
     address: [
-      "5F, No. 35, Daye Rd",
+      "4F, No. 384, Daye Rd",
       "Beitou District, Taipei",
       "Taiwan",
     ],
     socialMedia: {
-      facebook: "https://www.facebook.com/baplenews/",
-      instagram: "https://www.facebook.com/baplenews/",
-      twitter: "https://www.facebook.com/baplenews/",
+      facebook: "https://www.facebook.com/baplewines/",
+      instagram: "https://www.facebook.com/baplewines/",
+      twitter: "https://www.facebook.com/baplewines/",
     },
   },
-  domains: [group, energy, engineering, plastics, metalPackaging],
+  title: "Baple Wines",
+  navLinks: [
+    {
+      label: "Inicio",
+      to: "/",
+    },
+    {
+      label: "Wines",
+      to: "/",
+      links: [
+        {
+          label: "Red Wines",
+          to: "/red-wines",
+        },
+        {
+          label: "White Wines",
+          to: "/white-wines",
+        },
+        {
+          label: "Sparkling Wines",
+          to: "/sparkling-wines",
+        },
+      ],
+    },
+    {
+      label: "Solutions",
+      to: "/solutions",
+    },
+    {
+      label: "Sobre Nosotros",
+      to: "/plastics/about",
+    },
+    {
+      label: "Contacto",
+      to: "/plastics/contact",
+    },
+  ],
 };

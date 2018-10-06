@@ -10,16 +10,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: 'slug',
       value: slug,
     });
-    createNodeField({
-      node,
-      name: 'domain',
-      value: getDomain(slug),
-    });
-    createNodeField({
-      node,
-      name: 'underConstruction',
-      value: Boolean(node.frontmatter.underConstruction),
-    });
   }
 };
 
@@ -34,10 +24,6 @@ exports.createPages = ({ graphql, actions }) => {
               fileAbsolutePath
               fields {
                 slug
-                underConstruction
-              }
-              frontmatter {
-                layout
               }
             }
           }
@@ -49,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
         .forEach(({ node }) => {
           createPage({
             path: node.fields.slug,
-            component: path.resolve(`./src/templates/${node.fields.underConstruction ? "under-construction" : node.frontmatter.layout}.tsx`),
+            component: path.resolve(`./src/templates/wines-template.tsx`),
             context: {
               slug: node.fields.slug,
             }
@@ -58,28 +44,4 @@ exports.createPages = ({ graphql, actions }) => {
       resolve();
     })
   });
-}
-
-function getDomain(slug) {
-  const domains = [
-    { name: 'plastics', pattern: /^\/plastics\// },
-    { name: 'energy', pattern: /^\/energy\// },
-    { name: 'engineering', pattern: /^\/engineering\// },
-    { name: 'metalPackaging', pattern: /^\/metal-packaging\// },
-    { name: 'group', pattern: '/' },
-  ];
-
-  return domains.find(d => slug.match(d.pattern)).name;
-}
-
-function getLayout(slug) {
-  const layouts = [
-    { layout: '/app-plastics/', pattern: /^\/plastics\// },
-    { layout: '/app-energy/', pattern: /^\/energy\// },
-    { layout: '/app-engineering/', pattern: /^\/engineering\// },
-    { layout: '/app-metal-packaging/', pattern: /^\/metal-packaging\// },
-    { layout: '/app/', pattern: '/' },
-  ];
-
-  return layouts.find(l => slug.match(l.pattern)).layout;
-}
+};

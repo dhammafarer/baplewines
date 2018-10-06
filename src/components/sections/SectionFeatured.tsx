@@ -49,7 +49,13 @@ const styles = (theme: Theme) => createStyles({
     marginBottom: "1em",
   },
   heading: {
+    paddingTop: theme.spacing.unit * 3,
     paddingBottom: theme.spacing.unit * 3,
+    paddingLeft: theme.spacing.unit * 1,
+    paddingRight: theme.spacing.unit * 1,
+    color: theme.palette.common.white,
+    background: theme.palette.common.black,
+    opacity: 0.9,
   },
   subheading: {},
   paragraph: {},

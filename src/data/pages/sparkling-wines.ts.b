@@ -1,4 +1,4 @@
-﻿export default {
+﻿export const frontmatter = {
   sections: {
     wines: [
       {
@@ -40,8 +40,7 @@
     ],
     more: {
       heading: "Do you want something more?",
-      image: "./img/learn-more-2.jpg",
-      logo: "./img/logos/baplewines-logo.png",
+      logo: "../img/logos/baplewines-logo.png",
       link: {
         label: "Contact us!",
         to: "/contact",

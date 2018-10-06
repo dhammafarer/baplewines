@@ -48,16 +48,6 @@ const Footer: React.SFC<Props> = ({ classes, contact, title, logo }) => (
           </Typography>
         </div>
       </div>
-      <div className={classes.footerDivisions}>
-        <Divider/>
-        {divisions.map((x) =>
-          <Link to={x[0]} key={x[0]}>
-            <Button color="secondary">
-              {x[1]}
-            </Button>
-          </Link>,
-        )}
-      </div>
     </div>
     <div className={classNames(classes.footerSocial, classes.layout)}>
       {contact.socialMedia.facebook &&

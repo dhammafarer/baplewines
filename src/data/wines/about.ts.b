@@ -1,4 +1,4 @@
-﻿export default {
+﻿export const frontmatter = {
   sections: {
     abouts: [
       {
@@ -19,7 +19,7 @@
       },
       {
         heading: "Dr. José P. Gracia",
-        image: "./enologo-manchuela-696x434.jpg",
+        image: "../img/wines/enologo-manchuela-696x434.jpg",
         body: [
           "Dr. José P. Gracia, renowned enologist recently awarded by FEAE (Spanish winemarkers asociation) , he is the base of the DO TORO with his first creation,  the CERMEÑO 82 of TINTA DE TORO.",
           "Main actor getting back several grapes varieties such VIDAVILLO in DO CARIÑENA or our BOBAL in DO MANCHUELA.",
@@ -53,7 +53,7 @@
     ],
     more: {
       heading: "Do you want to know more about us?",
-      logo: "./img/logos/baplewines-logo.png",
+      logo: "../img/logos/baplewines-logo.png",
       link: {
         label: "Contact us!",
         to: "/contact",

@@ -5,7 +5,7 @@ import SectionCentered from "../components/sections/SectionCentered";
 
 const NotFound: React.SFC<{}> = (() => {
   return (
-    <Layout domain="group">
+    <Layout>
       <SectionCentered
         heading={"404"}
         subheading={"This page is not available."}

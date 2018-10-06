@@ -14,8 +14,8 @@ type Props = WithStyles<typeof styles> & {
     to?: string
     label?: string,
   };
-  image: any;
-  logo: any;
+  image?: any;
+  logo?: any;
 };
 
 const More: React.SFC<Props> = ({ heading, image, logo, link, classes }) => (
