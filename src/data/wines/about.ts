@@ -45,7 +45,7 @@
       },
       {
         heading: "D.O. Manchuela",
-        image: "../img/winesdorigen.jpg",
+        image: "../img/wines/dorigen.jpg",
         body: [
           "Quality and guarantee. The Appellation of Manchuela was established in year 2000 and is among the youngest Appellations in Spain. The area is located between the provinces of Cuenca and Albacete, and includes 70 municipal districts with a cultivated area of 72 000 hectares as well as an annual production of approximately 2 million hl of wine. Admitted grapes are Albillo, Bobal, Cabernet Sauvignon, Chardonnay, Garnacha, Macabeo, Merlot, Monastrell, Moravia Dulce, Sauvignon Blanc, Shiraz and Tempranillo.",
         ],

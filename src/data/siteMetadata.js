@@ -44,11 +44,11 @@ module.exports = {
     },
     {
       label: "Sobre Nosotros",
-      to: "/plastics/about",
+      to: "/about",
     },
     {
       label: "Contacto",
-      to: "/plastics/contact",
+      to: "/contact",
     },
   ],
 };
