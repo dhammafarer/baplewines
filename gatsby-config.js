@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-favicon',
       options: {
-        logo: './src/images/logos/baple-group-logo.png',
+        logo: './src/images/logos/baple-wines-logo.png',
       },
     },
     {
@@ -19,7 +19,7 @@ module.exports = {
         background_color: '#336699',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: './src/images/logos/baple-group-logo.png', // This path is relative to the root of the site.
+        icon: './src/images/logos/baple-wines-logo.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',

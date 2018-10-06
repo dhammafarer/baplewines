@@ -36,8 +36,8 @@ const HeaderBar: React.SFC<HeaderBarProps & WithStyles<typeof styles>> = ({
           <div className={classes.grow}/>
           <Hidden smDown>
             <div>
-              {navLinks.map((x) =>
-                <Link key={x.to} to={x.to}>
+              {navLinks.map((x, i) =>
+                <Link key={i} to={x.to}>
                   <Button className={classes.link}>
                     {x.label}
                   </Button>

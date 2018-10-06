@@ -1,6 +1,6 @@
 ﻿export const frontmatter = {
   sections: {
-    abouts: [
+    intros: [
       {
         heading: "Baplewines Wine Solutions",
         subheading: "Customized Solutions for your wine business line",
@@ -27,7 +27,7 @@
       },
       {
         heading: "Your Own Wine Label",
-        image: "../img/wine/sangria mockup front 3.jpg",
+        image: "../img/wines/sangria mockup front 3.jpg",
         body: [
           "Sometimes designing can be very challenging. It´s needs to tell the personality of the company that produce it yet presenting the item itself to convince the buyer. Our design team will provide you not just a design, but also help you to present your wine with an elegance Spanish aesthetic",
         ],
