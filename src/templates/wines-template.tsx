@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layouts/Layout";
+import About from "../components/sections/About";
 import More from "../components/sections/More";
 
 interface Props {
@@ -20,6 +21,14 @@ const WinesTemplate: React.SFC<Props> = (({ data }) => {
   const { wines, more } = data.javascriptFrontmatter.frontmatter.sections;
   return (
     <Layout>
+      { wines.map((w: any, i) =>
+        <About
+          heading={w.heading}
+          subheading={w.subheading}
+          body={w.body}
+          image={w.image}
+        />,
+      )}
       { more &&
         <More
           heading={more.heading}
