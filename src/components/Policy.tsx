@@ -60,7 +60,7 @@ class Policy extends React.Component<Props, State> {
           message={
             <div className={classes.content}>
               <Typography variant="body2" color="inherit">
-                Utilizamos cookies propias y de terceros para realizar análisis de uso y medición de nuestra web para mejorar nuestros servicios.
+                This site uses cookies. By continuing to browse this site, you are agreeing to our use of cookies.
               </Typography>
             </div>
           }

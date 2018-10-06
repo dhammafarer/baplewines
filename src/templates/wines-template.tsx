@@ -23,6 +23,7 @@ const WinesTemplate: React.SFC<Props> = (({ data }) => {
     <Layout>
       { wines.map((w: any, i) =>
         <About
+          key={i}
           leftSize={4}
           rightSize={8}
           heading={w.heading}
@@ -68,6 +69,13 @@ export const query = graphql`
           }
           more {
             heading
+            logo {
+              childImageSharp {
+                fixed(width: 300) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
             link {
               to
               label
