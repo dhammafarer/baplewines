@@ -24,7 +24,7 @@
           "The intensity of vitivino´s aroma",
         ],
         link: {
-          to: "/white-wine",
+          to: "/white-wines",
           label: "White wines",
         },
       },
