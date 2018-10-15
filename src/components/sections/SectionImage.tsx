@@ -4,7 +4,7 @@ import HorizontalSplit, { Size } from "./HorizontalSplit";
 import Typography from "@material-ui/core/Typography";
 import Img from "gatsby-image";
 
-export { Size } from "./HorizontalSplit";
+export { Size };
 
 const styles = (theme: Theme) => createStyles({
   image: {
