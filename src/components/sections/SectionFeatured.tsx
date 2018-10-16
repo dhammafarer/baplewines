@@ -51,8 +51,8 @@ const styles = (theme: Theme) => createStyles({
   heading: {
     paddingTop: theme.spacing.unit * 3,
     paddingBottom: theme.spacing.unit * 3,
-    paddingLeft: theme.spacing.unit * 1,
-    paddingRight: theme.spacing.unit * 1,
+    paddingLeft: theme.spacing.unit * 3,
+    paddingRight: theme.spacing.unit * 3,
     color: theme.palette.common.white,
     background: theme.palette.common.black,
     opacity: 0.9,
