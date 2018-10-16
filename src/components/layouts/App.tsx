@@ -11,6 +11,7 @@ import styles from "../../styles/components/layout-styles";
 
 export interface AppProps {
   title: string;
+  home: string;
   logo: any;
   lang: string;
   navLinks: any;
@@ -18,12 +19,12 @@ export interface AppProps {
 }
 
 const App: React.SFC<AppProps & WithStyles<typeof styles>> = ({
-  title, logo, contact, children, navLinks, classes, lang }) => (
+  title, home, logo, contact, children, navLinks, classes, lang }) => (
   <div className={classes.layout}>
     <CssBaseline/>
     <Policy />
     <Head title={title} lang={lang}/>
-    <Header title={title} logo={logo} navLinks={navLinks} contact={contact}/>
+    <Header title={title} home={home} logo={logo} navLinks={navLinks} contact={contact}/>
     <main className={classes.main}>
       {children}
     </main>

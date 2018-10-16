@@ -36,6 +36,7 @@ const Layout: React.SFC<{}> = ({ children }) => (
         site {
           siteMetadata {
             title
+            home
             navLinks {
               to
               label
@@ -70,6 +71,7 @@ const Layout: React.SFC<{}> = ({ children }) => (
     return (
       <App
         title={sm.title}
+        home={sm.home}
         logo={data.logo}
         navLinks={sm.navLinks}
         lang={"es"}

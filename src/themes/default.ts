@@ -16,13 +16,20 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
-      "Playfair Display",
       "sans-serif",
     ].join(","),
+    display4: {
+      fontFamily: "\"PlayFair Display\", serif",
+    },
+    display3: {
+      fontFamily: "\"PlayFair Display\", serif",
+    },
     display2: {
+      fontFamily: "\"PlayFair Display\", serif",
       color: primary,
     },
     display1: {
+      fontFamily: "\"PlayFair Display\", serif",
       color: primary,
     },
   },

@@ -18,16 +18,19 @@ export interface HeaderBarProps {
   open: any;
   title: string;
   logo: any;
+  home: string;
   navLinks: NavLink[];
   contact?: any;
 }
 
 const HeaderBar: React.SFC<HeaderBarProps & WithStyles<typeof styles>> = ({
-  classes, open, handleClose, toggleMenu, navLinks, title, logo, contact }) => (
+  classes, open, handleClose, toggleMenu, navLinks, title, logo, home, contact }) => (
     <div>
       <AppBar position="fixed" className={classes.bar}>
         <Toolbar>
-          <img className={classes.logo} src={logo.childImageSharp.fixed.src}/>
+          <Link to={home}>
+            <img className={classes.logo} src={logo.childImageSharp.fixed.src}/>
+          </Link>
           <Hidden smDown>
             <Typography variant="title" color="primary" className={classes.title}>
               {title}
@@ -36,8 +39,8 @@ const HeaderBar: React.SFC<HeaderBarProps & WithStyles<typeof styles>> = ({
           <div className={classes.grow}/>
           <Hidden smDown>
             <div>
-              {navLinks.map((x, i) =>
-                <Link key={i} to={x.to}>
+              {navLinks.map((x) =>
+                <Link key={x.to} to={x.to}>
                   <Button className={classes.link}>
                     {x.label}
                   </Button>

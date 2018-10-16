@@ -15,6 +15,7 @@ module.exports = {
     },
   },
   title: "Baple Wines",
+  home: "/",
   navLinks: [
     {
       label: "Home",
