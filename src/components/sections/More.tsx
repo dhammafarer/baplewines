@@ -15,22 +15,24 @@ type Props = WithStyles<typeof styles> & {
     label?: string,
   };
   image?: any;
-  logo?: any;
+  logo: any;
 };
 
 const More: React.SFC<Props> = ({ heading, image, logo, link, classes }) => (
   <SectionCentered
     heading={heading}
-    before={
-      logo && <Img className={classes.logo} fixed={logo.childImageSharp.fixed}/>
+    before={logo &&
+      <div className={classes.logo}>
+        <Img fluid={logo.childImageSharp.fluid}/>
+      </div>
     }
-  after={
-    <Link to={link.to}>
-      <Button className={classes.button} variant="outlined" color="primary" size="large">
-        {link.label}
-      </Button>
-    </Link>
-  }
+    after={
+      <Link to={link.to}>
+        <Button className={classes.button} variant="contained" color="primary" size="large">
+          {link.label}
+        </Button>
+      </Link>
+    }
   />
 );
 

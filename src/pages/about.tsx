@@ -18,7 +18,7 @@ interface IndexProps {
   };
 }
 
-const AbouPage: React.SFC<IndexProps> = (({ data }) => {
+const AboutPage: React.SFC<IndexProps> = (({ data }) => {
   const { abouts, more } = data.javascriptFrontmatter.frontmatter.sections;
   return (
     <Layout>
@@ -40,7 +40,7 @@ const AbouPage: React.SFC<IndexProps> = (({ data }) => {
   );
 });
 
-export default AbouPage;
+export default AboutPage;
 
 export const query = graphql`
   query AboutPageQuery {
@@ -52,7 +52,7 @@ export const query = graphql`
             body
             image {
               childImageSharp {
-                fluid(maxWidth: 1200) {
+                fluid(maxWidth: 1400) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -66,8 +66,8 @@ export const query = graphql`
             }
             logo {
               childImageSharp {
-                fixed(width: 300) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

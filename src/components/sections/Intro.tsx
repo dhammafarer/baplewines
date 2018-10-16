@@ -34,7 +34,7 @@ const Intro: React.SFC<Props> = ({ reverse, leftSize, rightSize, heading, subhea
     body={body}
     after={link &&
       <Link to={link.to}>
-        <Button variant="contained" color="primary" className={classes.button}>
+        <Button variant="outlined" color="primary" className={classes.button}>
           {link.label}
         </Button>
       </Link>

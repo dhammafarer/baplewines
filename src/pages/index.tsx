@@ -73,7 +73,7 @@ export const query = graphql`
             }
             image {
               childImageSharp {
-                fluid(maxWidth: 1200) {
+                fluid(maxWidth: 1400) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -87,8 +87,8 @@ export const query = graphql`
             }
             logo {
               childImageSharp {
-                fixed(width: 300) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

@@ -7,7 +7,7 @@ const NotFound: React.SFC<{}> = (() => {
   return (
     <Layout>
       <SectionCentered
-        heading={"404"}
+        heading={"Not Found"}
         subheading={"This page is not available."}
       />
     </Layout>
